@@ -39,7 +39,7 @@ class Renderer: NSObject, MTKViewDelegate {
         self.device = device
         commandQueue = device.makeCommandQueue()!
         vertexDescriptor = Renderer.buildVertexDescriptor()
-        renderPipeline = Renderer.buildPipeline(device: device, view: view, vertexDescriptor: vertexDescriptor)
+        renderPipeline = Renderer.makeRenderPipelineState(device: device, view: view, vertexDescriptor: vertexDescriptor)
         samplerState = Renderer.buildSamplerState(device: device)
         depthStencilState = Renderer.buildDepthStencilState(device: device)
         scene = Renderer.buildScene(device: device, vertexDescriptor: vertexDescriptor)
@@ -133,7 +133,14 @@ class Renderer: NSObject, MTKViewDelegate {
         return device.makeDepthStencilState(descriptor: depthStencilDescriptor)!
     }
     
-    static func buildPipeline(device: MTLDevice, view: MTKView, vertexDescriptor: MDLVertexDescriptor) -> MTLRenderPipelineState {
+    /// Make the RenderPipelineState based on DefaultLibrary, shader programs, RenderPipelineDescriptor and MetalVertexDescriptorFromModelIO
+    ///
+    /// - Parameters:
+    ///   - device: MTLDevice
+    ///   - view: MTKView
+    ///   - vertexDescriptor: vertexDescriptor
+    /// - Returns: MTLRenderPipelineState
+    static func makeRenderPipelineState(device: MTLDevice, view: MTKView, vertexDescriptor: MDLVertexDescriptor) -> MTLRenderPipelineState {
         guard let library = device.makeDefaultLibrary() else {
             fatalError("Could not load default library from main bundle")
         }

@@ -36,6 +36,7 @@
 		83EDDBE020FEE107006CE50F /* bob.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bob.obj; sourceTree = "<group>"; };
 		83EDDBE120FEE107006CE50F /* blub.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blub.obj; sourceTree = "<group>"; };
 		83EDDBE420FEE4BE006CE50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D69025722FDAA3E00BE0FDF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		83697CCC20F4E96400B4C2A6 = {
 			isa = PBXGroup;
 			children = (
+				9D69025722FDAA3E00BE0FDF /* README.md */,
 				83697CD720F4E96400B4C2A6 /* modern-metal */,
 				83697CD620F4E96400B4C2A6 /* Products */,
 			);
@@ -310,13 +312,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M4KB9BV65V;
+				DEVELOPMENT_TEAM = LHA84NAPNA;
 				INFOPLIST_FILE = "modern-metal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.modern-metal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rudifa.modern-metal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,13 +330,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M4KB9BV65V;
+				DEVELOPMENT_TEAM = LHA84NAPNA;
 				INFOPLIST_FILE = "modern-metal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.modern-metal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rudifa.modern-metal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
