@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         mtkView = MTKView()
         mtkView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(mtkView)
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|[mtkView]|", options: [], metrics: nil, views: ["mtkView" : mtkView]))
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[mtkView]|", options: [], metrics: nil, views: ["mtkView" : mtkView]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|[mtkView]|", options: [], metrics: nil, views: ["mtkView" : mtkView as Any]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[mtkView]|", options: [], metrics: nil, views: ["mtkView" : mtkView as Any]))
         
         let device = MTLCreateSystemDefaultDevice()!
         mtkView.device = device
