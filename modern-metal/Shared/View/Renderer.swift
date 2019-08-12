@@ -207,6 +207,7 @@ class Renderer: NSObject, MTKViewDelegate {
     }
     
     func draw(in view: MTKView) {
+//        printClassAndFunc()
         update(view)
         
         let commandBuffer = commandQueue.makeCommandBuffer()!
